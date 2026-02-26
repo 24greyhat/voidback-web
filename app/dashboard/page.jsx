@@ -4,6 +4,7 @@ import { DashboardStats } from "../components/dashboard/dashboard-stats";
 import { DashboardActions } from "../components/dashboard/dashboard-actions";
 import { DatasetsList } from "../components/dashboard/datasets-list";
 import { ExportInfo } from "../components/dashboard/export-info";
+import { Navigation } from "../components/navigation";
 
 // Mock data
 const datasets = [
@@ -48,13 +49,14 @@ const datasets = [
 export default function DashboardPage() {
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Dashboard - Voidback | Manage Your AI Training Datasets"
         description="Manage your AI training datasets, track annotations, and export data. View statistics and performance metrics for your machine learning projects."
         keywords="dataset management, annotation tracking, AI training dashboard, data export, machine learning metrics"
       />
       <div className="pt-20 min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <Navigation />
           <DashboardHeader />
           <DashboardStats datasets={datasets} />
           <DashboardActions />

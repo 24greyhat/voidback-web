@@ -97,6 +97,7 @@ export function RequestFulfillmentViz() {
                 </div>
               </div>
             </div>
+
           </div>
 
           {/* Bottom: Revenue Split */}
@@ -136,25 +137,7 @@ export function RequestFulfillmentViz() {
           ))}
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border">
-          <div className="text-center">
-            <div className="text-3xl font-semibold mb-2">2.5M+</div>
-            <div className="text-sm text-muted-foreground font-medium">Images available</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold mb-2">156</div>
-            <div className="text-sm text-muted-foreground font-medium">Countries represented</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold mb-2">$847K</div>
-            <div className="text-sm text-muted-foreground font-medium">Paid to annotators</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold mb-2">100%</div>
-            <div className="text-sm text-muted-foreground font-medium">Consensually sourced</div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 import { SEOHead } from "./components/seo/seo-head";
 import { HeroSection } from "./components/landing/hero-section";
-import { StatsSection } from "./components/landing/stats-section";
 import { FeaturesSection } from "./components/landing/features-section";
 import { RequestFulfillmentViz } from "./components/landing/request-fulfillment-viz";
 import { ProcessSection } from "./components/landing/process-section";
@@ -22,7 +21,6 @@ export default function Page() {
       <div className="pt-20" style={{ fontFamily: 'var(--font-family-serif)' }}>
         <Navigation />
         <HeroSection />
-        <StatsSection />
         <FeaturesSection />
         <RequestFulfillmentViz />
         <ProcessSection />

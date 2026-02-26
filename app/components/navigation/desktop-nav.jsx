@@ -20,7 +20,7 @@ export function DesktopNav() {
         </Button>
       </Link>
       <Link href="/login">
-        <Button size="sm" className="bg-primary hover:bg-primary/90 text-sm font-medium px-6">
+        <Button size="sm" className="bg-primary hover:bg-primary/90 text-sm font-medium px-6 mr-4">
           Get Started
         </Button>
       </Link>
