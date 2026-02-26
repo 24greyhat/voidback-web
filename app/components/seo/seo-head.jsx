@@ -1,6 +1,8 @@
 'use client'
 
+import { useRouter } from 'next/navigation';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 export function SEOHead({
@@ -13,7 +15,8 @@ export function SEOHead({
   includeServiceSchema = false
 }) {
 
-  const url = canonicalUrl || `https://voidback.com${window?.location.pathname}`
+  const pathname = useRouter().pathname;
+  const url = canonicalUrl || `https://voidback.com${pathname}`
 
   // Organization schema
   const organizationSchema = {

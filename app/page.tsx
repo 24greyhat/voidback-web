@@ -7,6 +7,7 @@ import { ProcessSection } from "./components/landing/process-section";
 import { CustomRequestsSection } from "./components/landing/marketplace-section";
 import { CTASection } from "./components/landing/cta-section";
 import { Footer } from "./components/landing/footer";
+import { Navigation } from "./components/navigation";
 
 
 export default function Page() {
@@ -19,6 +20,7 @@ export default function Page() {
         includeServiceSchema={true}
       />
       <div className="pt-20" style={{ fontFamily: 'var(--font-family-serif)' }}>
+        <Navigation />
         <HeroSection />
         <StatsSection />
         <FeaturesSection />

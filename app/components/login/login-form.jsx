@@ -1,9 +1,10 @@
 "use client";
 
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
+
 
 export function LoginForm() {
   return (
@@ -46,7 +47,7 @@ export function LoginForm() {
         </a>
       </div>
 
-      <Link to="/dashboard">
+      <Link href="/dashboard">
         <Button className="w-full bg-primary hover:bg-primary/90 h-11 font-semibold" type="submit">
           Sign in
         </Button>
